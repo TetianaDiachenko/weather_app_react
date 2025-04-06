@@ -5,4 +5,22 @@
   text-align: center;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
 
+.item {
+  background-color: #4caf50;
+  padding: 20px;
+  text-align: center;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
