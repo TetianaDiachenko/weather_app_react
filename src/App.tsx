@@ -1,4 +1,5 @@
 import './App.css'
+import './scss/main.scss';
 
 const App = () => {
   return (
