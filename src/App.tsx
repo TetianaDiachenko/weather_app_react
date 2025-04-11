@@ -1,15 +1,10 @@
-import './App.css'
-import './scss/main.scss';
-import './scss/base/typography.scss'
-
 const App = () => {
   return (
     <div className="container">
-      Hello!
+      <h1>Hello!</h1>
     </div>
   );
 };
-
 
 // function App() {
 
