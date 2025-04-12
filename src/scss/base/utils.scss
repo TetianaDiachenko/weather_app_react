@@ -1,0 +1,12 @@
+$fontFamily: 'Inter', sans-serif;
+$fontSize: 1rem; /* 16px */
+$fontColor: #1a1a1a;
+$whiteColor: #ffffff;
+$maxWidth: 1280px;
+$bgColor: #f6fafa;
+
+@mixin container {
+	max-width: $maxWidth;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
