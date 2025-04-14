@@ -1,19 +1,13 @@
+// import React from "react";
+import Layout from "./components/layout/Layout";
+
 const App = () => {
   return (
-    <div className="container">
+    <Layout>
       <h1>Hello!</h1>
-    </div>
+    </Layout>
   );
 };
 
-// function App() {
 
-
-//   return (
-//     <>
-
-//     </>
-//   )
-// }
-
-export default App
+export default App;

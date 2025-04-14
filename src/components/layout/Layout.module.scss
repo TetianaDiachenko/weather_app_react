@@ -1,0 +1,31 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+
+    // @include screen(xxl) {
+    //     padding: 2rem;
+    // }
+    // @include screen(xl) {
+    //     padding: 1.5rem 1 rem;
+    //     gap: 1.5rem;
+    // }
+    // @include screen(md) {
+    //     padding: 1rem 0.5rem;
+    //     gap: 1rem;
+    // }
+    // @include screen(sm) {
+    //     padding: 0.5rem;
+    //     gap: 0.5rem;
+    // }
+
+}
