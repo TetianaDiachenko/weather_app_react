@@ -2,8 +2,10 @@ $fontFamily: 'Inter', sans-serif;
 $fontSize: 1rem; /* 16px */
 $fontColor: #1a1a1a;
 $whiteColor: #ffffff;
-$maxWidth: 1280px;
+$maxWidth: 1440px;
 $bgColor: #f5f4f2;
+$borderRadius: 1rem;
+$shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 
 @mixin container {
 	max-width: $maxWidth;
