@@ -24,7 +24,8 @@
 
 .left {
     flex: 1;
-    max-width: 400px;
+    max-width: 500px;
+    padding-left: 5rem;
 }
 
 .right {
@@ -41,8 +42,11 @@
   
     .left,
     .right {
-      width: 100%;
+    //   width: 100%;
       justify-content: center;
+    }
+    .left {
+        padding-left: 0rem;
     }
   }
   
