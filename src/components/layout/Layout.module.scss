@@ -1,3 +1,5 @@
+@use '../../scss/base/utils.scss' as *;
+
 .layout {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,7 @@
 
 .wrapper {
     width: 100%;
-    max-width: 1440px;
+    max-width: $maxWidth;
     display: flex;
     flex-direction: column;
     gap: 2rem;
