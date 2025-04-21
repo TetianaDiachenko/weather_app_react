@@ -1,9 +1,10 @@
 // import React from 'react';
 import { useState } from 'react';
-import { ReactComponent as LoopIcon } from '../../../assets/icons/search.svg';
-import { ReactComponent as CloseIcon } from '../../../assets/icons/cross-small.svg';
+import LoopIcon from '../../../assets/icons/search.svg';
+// import { ReactComponent as LoopIcon } from '../../../assets/icons/search.svg';
+import CloseIcon from '../../../assets/icons/cross-small.svg';  
 import styles from './Search.module.scss';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 
 const Search = () => {
     const [inputValue, setInputValue] = useState('');
@@ -13,7 +14,12 @@ const Search = () => {
 
     return (
         <div className={styles.wrapper}>
-            <LoopIcon className={styles.icon} />
+            <img 
+            src={LoopIcon} 
+            alt="Loop icon" 
+            className={styles.icon}
+            />
+            {/* <LoopIcon className={styles.icon} /> */}
             <input 
             type="text" 
             className={styles.input} 
@@ -23,7 +29,8 @@ const Search = () => {
             />
             {inputValue && (
                 <button className={styles.clearInput} onClick={clearInputValue} aria-label="Clear search" >
-                    <CloseIcon className={classNames(styles.icon, styles.close)} />
+                   <img src={CloseIcon} alt="Close icon" className={styles.close} />
+                    {/* <CloseIcon className={classNames(styles.icon, styles.close)} /> */}
                 </button>
             )}
        </div> 
