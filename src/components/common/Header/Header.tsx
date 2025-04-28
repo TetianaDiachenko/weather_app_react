@@ -1,4 +1,3 @@
-// import React from 'react';
 import styles from './Header.module.scss';
 import Search from '../../search/Search/Search';
 // import SignInButton from '../../ui/SignInButton/SignInButton';
