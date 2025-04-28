@@ -8,6 +8,9 @@ const Search = () => {
     const clearInputValue = () => {
         setInputValue('');
     };
+    const changeValue = (e: React.ChangeEvent<HTMLInputElement>) => {  // type for change event in input
+        setInputValue(e.target.value);
+    };
 
     return (
         <div className={styles.wrapper}>
@@ -17,7 +20,7 @@ const Search = () => {
             className={styles.input} 
             placeholder="Enter city"
             value={inputValue}
-            onChange={ (e) => setInputValue(e.target.value)}
+            onChange={changeValue}
             />
             {inputValue && (
                 <button className={styles.clearInput} onClick={clearInputValue} aria-label="Clear search" >
