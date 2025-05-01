@@ -1,25 +1,21 @@
 @use '../../../scss/base/utils.scss' as *;
 @use '../../../scss/base/breakpoints.scss' as *;
 
-.header {
-    width: 100%;
-    background-color: $whiteColor;    
-    padding: 1rem 2rem;
-    box-shadow: $shadow;
-    border-radius: $borderRadius $borderRadius 0 0;
-}
-
-.container,
+.header,
 .left,
 .right {
     display: flex;
     align-items: center;
 }
 
-.container {
+.header {
+    width: 100%;
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+    background-color: $whiteColor;    
+    padding: 1rem 2rem;
+    box-shadow: $shadow;
+    border-radius: $borderRadius $borderRadius 0 0;
 }
 
 .left {

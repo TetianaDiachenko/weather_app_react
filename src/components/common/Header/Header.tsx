@@ -6,18 +6,16 @@ import Search from '../../search/Search/Search';
 const Header = () => {
     return (
         <header className={styles.header}>
-            <div className={styles.container}>
-                <div className={styles.left}>
-                    <Search />
-                </div>
-                <div className={styles.right}>
-                    {/* <ThemesSwitcher /> 
+            <div className={styles.left}>
+                <Search />
+            </div>
+            <div className={styles.right}>
+                {/* <ThemesSwitcher /> 
                     <SignInButton /> */}
-                </div>                
             </div>
         </header>
     )
-}   
+}
 
 export default Header;
 
