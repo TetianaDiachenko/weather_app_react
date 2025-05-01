@@ -9,12 +9,10 @@ import { Outlet } from 'react-router-dom';
 const Layout = () => {
     return (
         <div className={styles.layout}>
-            <div className={styles.wrapper}>
-                <Header />
-                <main className={styles.main}>
-                    <Outlet />
-                </main>
-            </div>
+            <Header />
+            <main className={styles.main}>
+                <Outlet />
+            </main>
         </div>
     );
 };

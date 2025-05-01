@@ -1,19 +1,18 @@
 @use '../../scss/base/utils.scss' as *;
 @use '../../scss/base/breakpoints.scss' as *;
 
-.layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.layout,
+.main {
+    padding: 2rem 1rem;
 }
 
-.wrapper {
+.layout {
     width: 100%;
     max-width: $maxWidth;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     gap: 2rem;
-    padding: 2rem 1rem;
 
     @include screen(xxl) {
         padding: 2rem;
@@ -30,5 +29,4 @@
         padding: 0.5rem;
         gap: 0.5rem;
     }
-
 }
