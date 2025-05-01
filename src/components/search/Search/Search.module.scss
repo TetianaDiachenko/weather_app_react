@@ -1,12 +1,14 @@
-@use '../../../scss/base/utils.scss' as *;
+@use '../../../scss/themes/shared.scss' as *;
+@use '../../../scss/themes/light.scss' as *;
+@use '../../../scss/themes/dark.scss' as *;
 @use '../../../scss/base/breakpoints.scss' as *;
 
 .wrapper {
     display: flex;
     align-items: center;
-    background-color: $whiteColor;
-    border: 1px solid #ccc;
-    border-radius: $borderRadius;
+    background-color: var(--bg-color-card);
+    border: 1px solid var(--input-border);
+    border-radius: var(--border-radius);
     padding: 0.5rem 1rem;
     gap: 0.5rem;
     max-width: 500px;
@@ -18,14 +20,15 @@
     border: none;
     outline: none;
     background: transparent;
-    color: $fontColor;
-    font-size: $fontSize;
+    color: var(--text-color-primary);
+    font-size: var(--font-size);
   }
   
   .icon {
     width: 1rem;
     height: 1rem;
     flex-shrink: 0;  
+    color: var(--icon-color);
   }
   
   .clearInput {

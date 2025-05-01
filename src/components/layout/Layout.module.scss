@@ -1,4 +1,4 @@
-@use '../../scss/base/utils.scss' as *;
+@use '../../scss/themes/shared.scss' as *;
 @use '../../scss/base/breakpoints.scss' as *;
 
 .layout,
@@ -8,7 +8,7 @@
 
 .layout {
     width: 100%;
-    max-width: $maxWidth;
+    max-width: var(--max-width);
     display: flex;
     flex-direction: column;
     margin: 0 auto;

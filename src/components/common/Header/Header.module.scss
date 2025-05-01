@@ -1,4 +1,6 @@
-@use '../../../scss/base/utils.scss' as *;
+@use '../../../scss/themes/shared.scss' as *;
+@use '../../../scss/themes/light.scss' as *;
+@use '../../../scss/themes/dark.scss' as *;
 @use '../../../scss/base/breakpoints.scss' as *;
 
 .header,
@@ -12,10 +14,10 @@
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
-    background-color: $whiteColor;    
+    background-color: var(--text-color-primary);    
     padding: 1rem 2rem;
-    box-shadow: $shadow;
-    border-radius: $borderRadius $borderRadius 0 0;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .left {
