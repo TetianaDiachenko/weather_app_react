@@ -2,6 +2,7 @@
 import { RouterProvider } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import { createBrowserRouter } from "react-router";
+import './App.scss'; 
 
 const router = createBrowserRouter([
   { path: "/", 
