@@ -1,0 +1,20 @@
+.themeSwitcher {
+    padding: 0.5rem;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--theme-icon-color);
+    transition: color 0.3s ease, transform 0.5s ease;
+
+    .themeSwitcher:hover & {
+        color: var(--theme-icon-hover-color);
+        transform: rotate(360deg);
+      }
+  }
+  

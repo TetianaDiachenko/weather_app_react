@@ -1,5 +1,6 @@
 // import React from "react";
 import { RouterProvider } from "react-router-dom";
+import { ThemeProvider } from "./components/context/ThemeContext";
 import Layout from "./components/layout/Layout";
 import { createBrowserRouter } from "react-router";
 import './App.scss'; 
@@ -16,7 +17,9 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <RouterProvider router={router}/>
+    <ThemeProvider>
+      <RouterProvider router={router}/>
+    </ThemeProvider>
   );
 };
 

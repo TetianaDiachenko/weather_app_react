@@ -1,7 +1,7 @@
 import styles from './Header.module.scss';
 import Search from '../../search/Search/Search';
 // import SignInButton from '../../ui/SignInButton/SignInButton';
-// import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '../../ui/ThemeSwitcher/ThemeSwitcher';
 
 const Header = () => {
     return (
@@ -10,8 +10,8 @@ const Header = () => {
                 <Search />
             </div>
             <div className={styles.right}>
-                {/* <ThemesSwitcher /> 
-                    <SignInButton /> */}
+                <ThemeSwitcher /> 
+                {/* <SignInButton />  */}
             </div>
         </header>
     )
