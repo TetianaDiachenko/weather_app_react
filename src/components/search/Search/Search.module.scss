@@ -1,13 +1,21 @@
-.wrapper {
+.search {
     display: flex;
     align-items: center;
-    background-color: var(--bg-color-card);
-    border: 1px solid var(--input-border);
+    border: 1px solid var(--search-border);
     border-radius: var(--border-radius);
     padding: 0.5rem 1rem;
     gap: 0.5rem;
     max-width: 500px;
     width: 100%;
+    transition: border-color 0.3s;
+
+    &:hover {    
+      border-color: var(--search-border-hover);
+    }
+
+    &:has(.input:focus) {
+      border-color: var(--search-border-hover);
+    }
   }
   
   .input {
@@ -17,6 +25,7 @@
     background: transparent;
     color: var(--text-color-primary);
     font-size: var(--font-size);
+
   }
   
   .icon {
@@ -24,6 +33,7 @@
     height: 1rem;
     flex-shrink: 0;  
     color: var(--icon-color);
+
   }
   
   .clearInput {

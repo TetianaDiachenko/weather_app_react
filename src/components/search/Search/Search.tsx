@@ -13,7 +13,7 @@ const Search = () => {
     };
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.search}>
             <LoopIcon className={styles.icon} />
             <input 
             type="text" 
