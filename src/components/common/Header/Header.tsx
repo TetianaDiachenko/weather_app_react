@@ -1,7 +1,11 @@
 import styles from './Header.module.scss';
 import Search from '../../search/Search/Search';
-// import SignInButton from '../../ui/SignInButton/SignInButton';
+import Button from '../../ui/Button/Button';
 import ThemeSwitcher from '../../ui/ThemeSwitcher/ThemeSwitcher';
+
+const handleSignIn = () => {
+    console.log('Sign In clicked'); // тимчасова заглушка
+  };
 
 const Header = () => {
     return (
@@ -11,7 +15,9 @@ const Header = () => {
             </div>
             <div className={styles.right}>
                 <ThemeSwitcher /> 
-                {/* <SignInButton />  */}
+                <Button size="medium" onClick={handleSignIn}>
+                    Sign In
+                </Button>
             </div>
         </header>
     )
