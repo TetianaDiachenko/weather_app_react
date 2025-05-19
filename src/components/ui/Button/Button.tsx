@@ -6,7 +6,6 @@ type ButtonProps = {
     children: React.ReactNode;
     onClick?: () => void;
     size?: 'small' | 'medium' | 'large';
-    color?: 'primary' | 'secondary' | 'danger';
     type?: 'button' | 'submit' | 'reset';
     className?: string;
  };
@@ -15,7 +14,6 @@ type ButtonProps = {
     children,
     onClick,
     size = 'medium',
-    color = 'primary',
     type = 'button',
     className,
  }) => {
