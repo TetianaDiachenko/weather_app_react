@@ -2,7 +2,7 @@ import { createContext, useEffect, useState, ReactNode } from 'react';
 
 type Theme = 'light' | 'dark';
 
-interface ThemeContextType {
+type ThemeContextType = {      // type замість interface (застаріле)
     theme: Theme;
     toggleTheme: () => void;
 }
