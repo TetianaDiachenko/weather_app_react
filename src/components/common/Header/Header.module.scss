@@ -37,11 +37,11 @@
   
     .left,
     .right {
-    //   width: 100%;
       justify-content: center;
     }
     .left {
         padding-left: 0rem;
+        max-width: 100%;
     }
   }
   
