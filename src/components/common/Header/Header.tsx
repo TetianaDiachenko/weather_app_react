@@ -15,7 +15,7 @@ const Header = () => {
             </div>
             <div className={styles.right}>
                 <ThemeSwitcher /> 
-                <Button size="medium" onClick={handleSignIn}>
+                <Button size="medium" onClick={handleSignIn} to="#">
                     Sign In
                 </Button>
             </div>
