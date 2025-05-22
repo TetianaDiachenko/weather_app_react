@@ -1,7 +1,7 @@
 import styles from './Header.module.scss';
 import Search from '../../search/Search/Search';
-import Button from '../../ui/Button/Button';
 import ThemeSwitcher from '../../ui/ThemeSwitcher/ThemeSwitcher';
+import { ButtonLink } from '../../ui/ButtonLink/ButtonLink';
 
 const handleSignIn = () => {
     console.log('Sign In clicked'); // тимчасова заглушка
@@ -15,9 +15,9 @@ const Header = () => {
             </div>
             <div className={styles.right}>
                 <ThemeSwitcher /> 
-                <Button size="medium" onClick={handleSignIn} to="#">
+                <ButtonLink size="medium" onClick={handleSignIn} to="#">
                     Sign In
-                </Button>
+                </ButtonLink>
             </div>
         </header>
     )
