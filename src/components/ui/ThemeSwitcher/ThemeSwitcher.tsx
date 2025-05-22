@@ -1,11 +1,10 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
 import styles from './ThemeSwitcher.module.scss';
 import SunIcon from '../../svg-components/Sun.tsx';
 import MoonIcon from '../../svg-components/Moon.tsx';
+import { useTheme } from "../../hooks/useTheme.tsx";
 
 const ThemeSwitcher = () => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const { theme, toggleTheme } = useTheme();
 
     return (
         <button 
