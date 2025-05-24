@@ -1,0 +1,35 @@
+.mapWrapper {
+    height: 60vh;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .map {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+  
+    .leaflet-container {
+      height: 100%;
+      width: 100%;
+      border-radius: 1rem;
+    }
+  
+    .leaflet-popup-content-wrapper {
+      border-radius: 1rem;
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  
+    .leaflet-popup-content {
+      margin: 0;
+      line-height: 1.4;
+    }
+  
+    .leaflet-popup-tip {
+      display: none;
+    }
+  }
+  
