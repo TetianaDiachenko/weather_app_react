@@ -8,12 +8,12 @@ export type WeatherData = {
     main: { temp: number };
 }
 
-async function fetchWeatherByCoords (
+export async function fetchWeatherByCoords (
     lat: number,
     lon: number,
     lang = 'en'
 ): Promise<WeatherData> {
-    const url = `${BASE_URL}/weather?lat=${lat}&${lon}&units=metric&appid=${API_KEY}&lang${lang}`;
+    const url = `${BASE_URL}/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}&lang=${lang}`;
 
     const res = await fetch(url);
     if (!res.ok) {
@@ -21,6 +21,5 @@ async function fetchWeatherByCoords (
     }
     const data: WeatherData = await res.json();
     return data;
-}
+};
 
-export default { fetchWeatherByCoords };
