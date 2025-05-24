@@ -2,6 +2,7 @@ import { RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "./components/contexts/ThemeProvider";
 import Layout from "./components/layout/Layout";
 import { createBrowserRouter } from "react-router";
+import Main from "./pages/Main";
 import './App.scss'; 
 
 const router = createBrowserRouter([
@@ -9,6 +10,7 @@ const router = createBrowserRouter([
     element: <Layout />, 
     // errorElement: < NotFound />, // add
     children: [
+      { index: true, element: <Main /> } 
       // { path: "main", element: <Main />} // add
     ] },
 ],
