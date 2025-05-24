@@ -2,11 +2,24 @@ const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 export type WeatherData = {
-    name: string;
-    coord: { lat: number; lon: number };
-    weather: { description: string; icon: string }[];
-    main: { temp: number };
-}
+    main: {
+      temp: number;
+      humidity: number;
+      pressure: number;
+    };
+    weather: {
+      icon: string;
+      description: string;
+    }[];
+    wind: {
+      speed: number;
+      deg: number;
+    };
+    coord: {
+      lat: number;
+      lon: number;
+    };
+  }
 
 export async function fetchWeatherByCoords (
     lat: number,
