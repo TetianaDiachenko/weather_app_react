@@ -5,4 +5,6 @@
 @use './scss/themes/light.scss' as *;
 @use './scss/themes/dark.scss' as *;
 
-@use './components/layout/Layout.module.scss'
+@use './components/layout/Layout.module.scss';
+
+@use 'leaflet/dist/leaflet.css';
